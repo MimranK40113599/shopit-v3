@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node backend/app.js",
     "dev": "cross-env NODE_ENV=DEVELOPMENT nodemon backend/app.js",
-    "prod": "cross-env NODE_ENV=PRODUCTION nodemon backend/app.js"
+    "prod": "cross-env NODE_ENV=PRODUCTION nodemon backend/app.js",
+    "seeder": "node backend/seeder/seeder.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/MimranK40113599/shopit-v3#readme",
   "dependencies": {
+    "cross-env": "^10.1.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.7.3",
