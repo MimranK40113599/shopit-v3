@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MetaData from "./layout/MetaData";
+import { useGetProductsQuery } from "../redux/api/productsApi";
+import ProductItem from "./product/ProductItem";
+import Loader from "./layout/Loader";
+import toast from "react-hot-toast";
 
 const Home = () => {
   const { data, isLoading, error, isError } = useGetProductsQuery();
@@ -11,9 +15,10 @@ const Home = () => {
   }, [isError]);
 
   if (isLoading) return <Loader />;
+
   return (
     <>
-      <MetaData title={"Best Products"} />
+      <MetaData title={"Buy Best Products Online"} />
       <div className="row">
         <div className="col-6 col-md-12">
           <h1 id="products_heading" className="text-secondary">
