@@ -1,0 +1,32 @@
+{
+  "name": "shopit-v3",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "I am now going to make my own version of the project \"shopit-v2\" by ghulamabbas2/shopit-v2, as i followed him in the eCommerce with MERN Stack from honhaarjawan.pk.",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "nodemailer": "^9.0.3"
+  },
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "cross-env NODE_ENV=DEVELOPMENT nodemon backend/app.js",
+    "prod": "cross-env NODE_ENV=PRODUCTION nodemon backend/app.js",
+    "seeder": "node backend/seeder/seeder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MimranK40113599/shopit-v3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MimranK40113599/shopit-v3/issues"
+  },
+  "homepage": "https://github.com/MimranK40113599/shopit-v3#readme"
+}
